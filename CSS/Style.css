@@ -179,7 +179,7 @@ textarea{
 radio{
 
   align-items: baseline;
-  position:fixed;
+  position:sticky;
   left:90%;
   align-items:first baseline;
 
