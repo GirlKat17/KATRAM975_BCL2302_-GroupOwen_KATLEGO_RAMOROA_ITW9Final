@@ -16,20 +16,29 @@ body{
      
 
         }
-        
-        .img {
-          max-width: 100%;
-          height: auto;
-          padding:5%;
-  
-          top:30%;
-  
-          left: 25%;
-          padding-left:30%;
-          padding-top:30%;
-          margin-top: 30%;
-        
+        @media only screen and (min-width:300px) and (max-width:600px) {
+          header {
+            width: auto;
+            height: auto;
+          }
         }
+
+        @media only screen and (min-width:600px) and (max-width:789px) {
+          header {
+            width: auto;
+            height: auto;
+          }
+        }
+        
+        picture {
+          padding-left:35%;
+          position:relative;
+          top:40%;
+          height: auto;
+        }
+
+      
+      
 
       .boxAbout{
 
@@ -42,6 +51,17 @@ body{
         border: 0.5em transparent;
        }
 
+       @media only screen and (min-width:300px) and (max-width:600px) {
+        .boxAbout {
+          width: auto;
+        }
+      }
+
+      @media only screen and (min-width:660px) and (max-width:789px) {
+        .boxAbout {
+          width: auto;
+        }
+      }
 
     .CONTAINER {
 
@@ -84,22 +104,10 @@ body{
     display:horizontal;
 
    }
-   @media only screen and (min-width:300px) and (max-width:600px) {
-    p {
-      font-size: 12px;
-    }
-  }
 
-h2{
-    font-style:italic;
-    text-align: center;
 
-    }
-    @media only screen and (min-width:300px) and (max-width:600px) {
-      h2 {
-        font-size: 1.2em;
-      }
-    }
+
+
 
 .boxContact{
 
@@ -142,20 +150,28 @@ h1{
     position: absolute;
     top:15%;
     margin-top: 5%;
-    left: 15%;
+    left:15%;
   }
   @media only screen and (min-width:300px) and (max-width:600px) {
     h1 {
-      font-size: 17px;
+      top:9%;
+      left:10%;
+      font-size: 10px;
     }
   }
   @media only screen and (min-width:690px) and (max-width:800px) {
     h1 {
-      font-size: 30px;
+      top:9%;
+      left:10%;
+      font-size: 10px;
+      font-size: 15px;
     }
   }
   @media only screen and (min-width:890px) and (max-width:1200px) {
     h1 {
+      top:15%;
+      margin-top: 5%;
+      left:15%;
       font-size: 45px;
     }
   }
@@ -171,15 +187,18 @@ h3{
 
   @media only screen and (min-width:300px) and (max-width:600px) {
     h3 {
-      font-size: 1.10em;
+      font-size:5px;
+      left:10%;
+      top:10%;
     }
   }
 
-  @media only screen and (min-width:660px) and (max-width:800px) {
+  @media only screen and (min-width:690px) and (max-width:800px) {
     h3 {
 
-      font-size:1em ;
-
+      font-size:10px;
+      left:10%;
+      top:5%;
     }
   }
 
@@ -216,42 +235,42 @@ ul {
     display: inline-block;
   
   }
+  @media only screen and (min-width:300px) and (max-width:600px) {
+    ul a{
+     margin:1px;
+    }
+  }
 
+
+ 
 
 
 textarea{
     width: 450px;
     height:130px;
 }
-@media only screen and (min-width:890px) and (max-width:1200px) {
+@media only screen and (min-width:300px) and (max-width:600px) {
   textarea{
-  width:200px;
-  height:50px;
+   width: 30px;
+   height:50px;
   }
 }
 
-/* for button download*/
+@media only screen and (min-width:890px) and (max-width:1200px) {
 
-.buttonDownload{
-  padding: 10px 15px;
-  text-align: center;
-  font-size: 10px;
-  box-shadow: 0 8px 16px 0 rgb(19, 18, 16), 0 6px 20px 0 black;
-  position: relative;
-  left: 20px;
+  textarea{
+  width:70px;
+  height:70px;
+  }
 }
-.buttonDownload{
-  position: absolute;
-  top:70%;
-  left:90%;
 
-}
+
 
 /* for button Top*/
 .buttonTop{
   position: absolute;
   left:95%;
-
+  box-shadow: 0 8px 16px 0 rgb(19, 18, 16), 0 6px 20px 0 black;
 }
 radio{
 
@@ -259,5 +278,16 @@ radio{
   position:sticky;
   left:90%;
   align-items:first baseline;
+
+}
+middle{
+  padding-left:45%;
+}
+
+form{
+  margin: 5%;
+  padding-left: 10%;
+  margin-top: 5%;
+
 
 }

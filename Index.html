@@ -6,41 +6,41 @@
 <!-- my css and font library link-->
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="C:\Users\SoftwareDeveloper47\Documents\GitHub\KATRAM975_BCL2302_KATLEGO_RAMOROA_ITW9Final\CSS\Style.css">
+            <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
         </head>
 
 <!-- Header-->
             <header>
                 <ul>
-                <a href="Index.html">Home</a> 
-                <a href="C:\Users\SoftwareDeveloper47\Documents\GitHub\resume_1">Project</a>
+                    <a href="Index.html">Home</a> 
+                    <a href="www.github">Project</a>
                     <!--Links to my sections in my website-->
-                    <a href="#About me"> About Me</a>
                     <a href="#Work Experience"> Work Experience</a>
                     <a href="#Education"> Education </a>
-                     <a href="#Skills & Languages"> Skill</a>
-                    <a href="#Contact Me"> Contact Me</a>
+                    <a href="#Skills & Languages"> Skill</a>
+                    <a href="#Contact me"> Contact Me</a>
                 
-
-             
-<!--My section links ends here--> 
                 </ul>
-
+<!--My section links ends here--> 
                 <h1 id="Name"> Katlego Patience Ramoroa</h1>
                 <h3> Junior Software Devoloper</h3>
 
-                <picture class="img">
-                <img src="C:\Users\SoftwareDeveloper47\Documents\GitHub\KATRAM975_BCL2302_KATLEGO_RAMOROA_ITW9Final\IMAGES\Katlego half.jpg" width="25%" height="50%">
+                <picture>
+                <img src="./IMAGES/Katlego half.jpg" width="25%" height="50%">
             </picture>
 
             </header>
             <!-- Header ends here-->
 
-
 <!--My download cv button-->
 
-            <button class="buttonDownload" onclick="window.print()">Download CV</button>
+<p>    
+    <a href="./HTML/Katlego P Ramoroa KPR 2023.pdf" class="button">
+       <i class="fa fa-download"></i>
+          Download CV
+    </a>
+</p>
         
 <!--My body for my Resume-->
                 <body>
@@ -48,19 +48,13 @@
                     <Section class="boxAbout">
                      <h2 id="About Me"> About Me</h2>
                         <p>
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-                             Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                             Feel free to drag and drop me anywhere you like on your page. 
-                            I’m a great place for you to tell a story and let your users know a little more about you.
+                         I am a passionate software developer. I enjoy solving problems and seeing my ideas come to live(reality).
+                        Having challanges inspires me to work hard and look for a better way to do things. I am always keen on learning 
                         </p>
                     </Section>
    <!-- about me section ends here-->
 
             
-
-
-
-
     <!-- Work section-->
         <Div class="CONTAINER">      
                     <section class="box">
@@ -86,7 +80,7 @@
                             </p>
                         
                                
-                            <p>2018 - 2018</p>
+                            <p>2016 - 2016</p>
                                  <p>
                                 Xchange Investment
                                 </p>
@@ -111,13 +105,13 @@
                              Softerware Eng 
                                 <br>
                                 <br>
-                            2017/ JAN
+                            2015/ JAN
                                 <br>
                                 <br>
-                            Peason Instu 
+                                Pearson Institute of Higher Education
                                 <br>
                                 <br>
-                              BSC Informatics 
+                                Bachelor of Science in Informatics
                                 <br>
                                     <br>
                              2019
@@ -176,9 +170,11 @@
                     
                         <h2 id="Contact me"> Contact Me</h2>
  <!--Font awesome icons  -->
+                    <middle>
                         <li class="Linkedin"><a href="https://www.Linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
             
                         <li class="facebook"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                    </middle>
                         <p>
                         Contact Numbers: O767377518
                         <br>
@@ -189,7 +185,7 @@
     <!--My Form content-->
         <form action="https://formsubmit.co/78f8adeb222e2d6df1646b7dd57c5860" method="post">
 
-                        <lable for="Name">Name</lable>
+                        <lable for="Name">Name:</lable>
                         <input type="text" id="name" name="user_name" required>
                     
 
@@ -199,11 +195,11 @@
                         
 
                         <br>
-                        <label for="contact">Contact Numbers</label>
+                        <label for="contact">Contact Numbers:</label>
                         <input type="number" id="Numbers" Name="numbers">
                          
 <!--options to select your Reason-->
-                        <label for="Reason">Reason</label>
+                        <label for="Reason">Reason:</label>
                         <select name="Reason" id="subject" required>
                             <option value="Interview">Interview</option>
                             <option value="Resume Feedback"> Resume Feedback </option>
@@ -214,9 +210,9 @@
                         <textarea type="text" name="Feedback" optional placeholder=" Please write your Message"></textarea>
                         </p>
 
-                        <br>
+                        <p>
                         <input type="submit" name="submit" value="Submit Feedback">
-                        
+                    </p>
                        
                     </form>
                 
