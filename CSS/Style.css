@@ -242,29 +242,23 @@ ul {
   }
 
 
- 
+ textarea{
+  columns: 50;
+  grid-auto-rows:10;
+ }
 
-
-textarea{
-    width: 450px;
-    height:130px;
-}
-@media only screen and (min-width:300px) and (max-width:600px) {
+ @media only screen and (min-width:300px) and (max-width:600px) {
   textarea{
-   width: 30px;
-   height:50px;
+   width: 70px;
+   height:80px;
   }
 }
-
-@media only screen and (min-width:890px) and (max-width:1200px) {
-
+@media only screen and (min-width:690px) and (max-width:890px) {
   textarea{
-  width:70px;
-  height:70px;
+   width: 100px;
+   height:100px;
   }
 }
-
-
 
 /* for button Top*/
 .buttonTop{
